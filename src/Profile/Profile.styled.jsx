@@ -49,7 +49,7 @@ export const Location = styled.p`
 export const StatsList = styled.ul`
   display: flex;
   padding: 0;
-  background-color: #e6e6fa;
+  background-color: #f0f8ff;
   border: 1px solid #909090;
 `;
 
@@ -69,12 +69,11 @@ export const StatLabel = styled.span`
   font-weight: 400;
   font-size: 15px;
   line-height: 1.25;
-  color: #999999;
+  color: #909090;
 `;
 
 export const StatQuantity = styled.span`
   margin: 0 auto;
   font-weight: 700;
   font-size: 15px;
-  line-height: 1.25;
 `;
