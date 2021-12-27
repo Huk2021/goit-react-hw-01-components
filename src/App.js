@@ -2,6 +2,8 @@ import Profile from "./Profile/Profile";
 import user from "./Profile/user.json";
 import Statistics from "./Statistics/Statistics";
 import data from "./Statistics/data.json";
+import FriendsList from "./FriendsList/FriendsList";
+import friends from "./FriendsList/friends.json";
 
 import { Container } from "./App.styled";
 
@@ -16,6 +18,7 @@ export default function App() {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <FriendsList friends={friends} />
     </Container>
   );
 }
