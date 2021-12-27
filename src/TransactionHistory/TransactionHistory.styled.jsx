@@ -1,14 +1,37 @@
 import styled from "styled-components";
 
-export const SectionTH = styled.section``;
+export const Table = styled.table`
+  width: 800px;
+  margin: 0px auto;
+`;
 
-export const Table = styled.table``;
+export const Thead = styled.thead`
+  background-color: #87cefa;
+`;
 
-export const Thead = styled.thead``;
+export const TD = styled.td`
+  width: calc(100% / 3);
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+`;
 
-export const Items = styled.th``;
-export const TBody = styled.tbody``;
+export const TBody = styled.tbody`
+  background-color: #ffffff;
+`;
 
-export const TR = styled.tr``;
+export const TR = styled.tr`
+  &:nth-of-type(2n) {
+    background-color: #f0f0f0;
+  }
+`;
 
-export const TD = styled.td``;
+export const Items = styled.th`
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  font-size: 18px;
+`;
