@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 export const StatisticsSection = styled.section`
   width: 300px;
