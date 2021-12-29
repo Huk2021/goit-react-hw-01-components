@@ -13,6 +13,7 @@ import {
 } from "./Profile.styled";
 
 export default function Profile({ username, tag, location, avatar, stats }) {
+  const { followers, views, likes } = stats;
   return (
     <ProfileCard>
       <Discription>
@@ -25,15 +26,15 @@ export default function Profile({ username, tag, location, avatar, stats }) {
       <StatsList>
         <StatsItem>
           <StatLabel>Followers</StatLabel>
-          <StatQuantity>{stats.followers}</StatQuantity>
+          <StatQuantity>{followers}</StatQuantity>
         </StatsItem>
         <StatsItem>
           <StatLabel>Views</StatLabel>
-          <StatQuantity>{stats.views}</StatQuantity>
+          <StatQuantity>{views}</StatQuantity>
         </StatsItem>
         <StatsItem>
           <StatLabel>Likes</StatLabel>
-          <StatQuantity>{stats.likes}</StatQuantity>
+          <StatQuantity>{likes}</StatQuantity>
         </StatsItem>
       </StatsList>
     </ProfileCard>
